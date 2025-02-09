@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Color FotiFoti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / LOGO -->
+  <header>
+    <img src="images/fotifotilogo.png" alt="FotiFoti Logo" class="logo">
+    <h1>Color FotiFoti</h1>
+    <p>A place to find and color in my drawings</p>
+  </header>
+
+  <!-- GALLERY SECTION -->
+  <main>
+    <h2>Gallery of Drawings</h2>
+    <!-- We will insert a container where drawings appear -->
+    <div id="gallery"></div>
+  </main>
+
+  <!-- DONATION SECTION -->
+  <section id="donations">
+    <h2>Support My Art</h2>
+    <p>If you enjoy these drawings, feel free to donate any amount to help me keep creating!</p>
+
+    <!-- Bitcoin Donation -->
+    <div class="donation-box">
+      <h3>Donate via Bitcoin</h3>
+      <!-- Replace with your actual QR code's image path -->
+      <img src="images/bitcoin_qr.png" alt="Bitcoin QR Code" width="200">
+      <!-- Replace with your actual BTC address -->
+      <p>BTC Address: <strong>bc1qYourGeneratedAddressHere</strong></p>
+    </div>
+
+    <!-- PayPal Donation -->
+    <div class="donation-box">
+      <h3>Donate via PayPal</h3>
+      <!-- Insert your PayPal button code snippet below -->
+      <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+        <input type="image" 
+               src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" 
+               border="0" 
+               name="submit" 
+               alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" 
+             src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" 
+             width="1" height="1">
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Color FotiFoti</p>
+  </footer>
+
+  <!-- OPTIONAL: GALLERY SCRIPT -->
+  <script src="gallery.js"></script>
+</body>
+</html>
