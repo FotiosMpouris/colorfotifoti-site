@@ -3,16 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Color FotiFoti</title>
+  <title>Color FotiFoti - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER / LOGO -->
+  <!-- HEADER with NAV -->
   <header>
     <img src="images/fotifotilogo.png" alt="FotiFoti Logo" class="logo">
     <h1>Color FotiFoti</h1>
-    <p>A place to find, color and keep any of my drawings</p>
+    <p>A place to find and color in my drawings</p>
+
+    <nav>
+      <ul class="nav-links">
+        <!-- 'active' class for current page -->
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="screensavers.html">Free Screensavers</a></li>
+        <li><a href="about.html">About the Artist</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- GALLERY SECTION -->
@@ -25,36 +34,30 @@
   <section id="donations">
     <h2>Support My Art</h2>
     <p class="donation-intro">
-      All downloads are free!<br> If you enjoy these drawings, feel free to donate any amount
+      All downloads are free! If you enjoy these drawings, feel free to donate any amount
       to help me keep creating more artwork.
     </p>
 
     <div class="donation-container">
       <!-- BITCOIN Donation Box -->
       <div class="donation-box">
-        <!-- Optional Bitcoin Logo -->
         <img src="images/bitcoin-logo.png" alt="Bitcoin Logo" class="payment-logo">
-        
         <h3>Donate via Bitcoin</h3>
-        <!-- The BTC QR code -->
         <img src="images/bitcoin_qr.png" alt="Bitcoin QR Code" width="150">
         <p>
           BTC Address: 
-          <strong>3F73ajY6txtULQVHvnKwUV4EENSY8u1hpb</strong>
+          <strong>bc1qYourRealAddressHere</strong>
         </p>
       </div>
 
       <!-- PAYPAL Donation Box -->
       <div class="donation-box">
-        <!-- Optional PayPal Logo -->
         <img src="images/paypal-logo.png" alt="PayPal Logo" class="payment-logo">
-        
         <h3>Donate via PayPal</h3>
-        <!-- The new PayPal QR Code -->
         <img src="images/paypal_qr.png" alt="PayPal QR Code" width="150">
         <p>
           Or click 
-          <a href="https://paypal.me/colorfotifoti" target="_blank">here</a> 
+          <a href="https://paypal.me/YourPayPalMeName" target="_blank">here</a> 
           to donate via PayPal.me
         </p>
       </div>
@@ -66,7 +69,7 @@
     <p>&copy; 2025 Color FotiFoti</p>
   </footer>
 
-  <!-- OPTIONAL: GALLERY SCRIPT (Dynamic Display of Drawings) -->
+  <!-- GALLERY SCRIPT (Dynamic Display of Drawings) -->
   <script src="gallery.js"></script>
 </body>
 </html>
