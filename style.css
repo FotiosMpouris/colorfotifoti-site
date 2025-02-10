@@ -1,5 +1,12 @@
 /* style.css */
 
+/* Reset some default margins/padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,6 +14,7 @@ body {
   color: #333;
 }
 
+/* ----- HEADER STYLES ----- */
 header {
   text-align: center;
   padding: 1.5rem;
@@ -25,6 +33,11 @@ h1 {
   font-size: 2rem;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
+/* ----- MAIN / GALLERY SECTION ----- */
 main {
   max-width: 900px;
   margin: 2rem auto;
@@ -34,7 +47,7 @@ main {
 #gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 1rem;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
@@ -48,25 +61,62 @@ main {
 .gallery-item img {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
+/* ----- DONATION SECTION ----- */
 #donations {
   max-width: 900px;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 2rem;
+  background-color: #f3f3f3; /* Light gray background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#donations h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.donation-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Donation boxes arranged in a column or side by side if you'd like */
+.donation-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .donation-box {
+  flex: 1 1 300px;
   background-color: #fff;
   border: 1px solid #ddd;
-  margin: 1rem 0;
-  padding: 1rem;
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-align: center;
+  min-width: 280px;
 }
 
 .donation-box h3 {
-  margin-top: 0;
+  margin-top: 0.5rem;
 }
 
+.payment-logo {
+  max-width: 60px;
+  margin-bottom: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----- FOOTER ----- */
 footer {
   text-align: center;
   padding: 1rem;
