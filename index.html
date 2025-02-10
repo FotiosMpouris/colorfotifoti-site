@@ -18,36 +18,40 @@
   <!-- GALLERY SECTION -->
   <main>
     <h2>Gallery of Drawings</h2>
-    <!-- We will insert a container where drawings appear -->
     <div id="gallery"></div>
   </main>
 
   <!-- DONATION SECTION -->
   <section id="donations">
     <h2>Support My Art</h2>
-    <p>If you enjoy these drawings, feel free to donate any amount to help me keep creating!</p>
+    <p class="donation-intro">
+      All downloads are free! If you enjoy these drawings, feel free to donate any amount
+      to help me keep creating more artwork.
+    </p>
 
-    <!-- Bitcoin Donation -->
-    <div class="donation-box">
-      <h3>Donate via Bitcoin</h3>
-      <!-- Replace with your actual QR code's image path -->
-      <img src="images/bitcoin_qr.png" alt="Bitcoin QR Code" width="200">
-      <!-- Replace with your actual BTC address -->
-      <p>BTC Address: <strong>3F73ajY6txtULQVHvnKwUV4EENSY8u1hpb</strong></p>
+    <div class="donation-container">
+      <!-- BITCOIN Donation Box -->
+      <div class="donation-box">
+        <img src="images/bitcoin-logo.png" alt="Bitcoin Logo" class="payment-logo">
+        <h3>Donate via Bitcoin</h3>
+        <img src="images/bitcoin_qr.png" alt="Bitcoin QR Code" width="150">
+        <p>
+          BTC Address: 
+          <strong>bc1qYourRealAddressHere</strong>
+        </p>
+      </div>
+
+      <!-- PAYPAL Donation Box -->
+      <div class="donation-box">
+        <img src="images/paypal-logo.png" alt="PayPal Logo" class="payment-logo">
+        <h3>Donate via PayPal</h3>
+        <p>
+          Click 
+          <a href="https://paypal.me/YourPayPalMeLink" target="_blank">here</a> 
+          to donate any amount via PayPal.
+        </p>
+      </div>
     </div>
-
-    <!-- PayPal Donation -->
-    <div class="donation-box">
-  <h3>Donate via PayPal</h3>
-  <p>
-    Click 
-    <a href="https://paypal.me/colorfotifoti" target="_blank">
-      here
-    </a>
-    to donate any amount via PayPal.
-  </p>
-</div>
-    
   </section>
 
   <!-- FOOTER -->
@@ -55,7 +59,7 @@
     <p>&copy; 2025 Color FotiFoti</p>
   </footer>
 
-  <!-- OPTIONAL: GALLERY SCRIPT -->
+  <!-- OPTIONAL: GALLERY SCRIPT (Dynamic Display of Drawings) -->
   <script src="gallery.js"></script>
 </body>
 </html>
