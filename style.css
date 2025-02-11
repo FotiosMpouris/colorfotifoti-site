@@ -224,7 +224,7 @@ footer {
    Use this class on your <img> tag to enlarge 
    the icon for both mobile and desktop. */
 .instagram-icon {
-  width: 50px;       /* Increase as desired */
+  width: 100px;       /* Increase as desired */
   height: auto;
   vertical-align: middle;
 }
