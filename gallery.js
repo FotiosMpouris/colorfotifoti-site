@@ -3,6 +3,8 @@
 // List your drawings in an array (newest first if you prefer).
 // Each entry is the filename in your 'drawings/' folder.
 const drawings = [
+  "drawing10.png",
+  "drawing9.png",  
   "drawing8.png",
   "drawing7.png",
   "drawing6.png",
