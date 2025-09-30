@@ -3,22 +3,9 @@
 // List your drawings in an array (newest first if you prefer).
 // Each entry is the filename in your 'drawings/' folder.
 const drawings = [
-  "drawing16.png",
-  "drawing15.png",  
-  "drawing14.png",
-  "drawing13.png",
-  "drawing12.png",
-  "drawing11.png",
-  "drawing10.png",
-  "drawing9.png",  
-  "drawing8.png",
-  "drawing7.png",
-  "drawing6.png",
-  "drawing5.png",
-  "drawing4.png",
-  "drawing3.png",
-  "drawing2.png",
-  "drawing1.png"
+  "fotifoti01",
+  "fotifoti02"
+  
 ];
 
 // The ID of the HTML container where we display them
@@ -32,7 +19,7 @@ drawings.forEach(filename => {
 
   // Create the image element
   const img = document.createElement("img");
-  img.src = `drawings/${filename}`;
+  img.src = `fotifoti/${filename}`;
   img.alt = filename;
 
   // Add image to the div
@@ -41,7 +28,7 @@ drawings.forEach(filename => {
   // Optional: add a link or button if you want
   // e.g., a "Download" link
   const downloadLink = document.createElement("a");
-  downloadLink.href = `drawings/${filename}`;
+  downloadLink.href = `fotifoti/${filename}`;
   downloadLink.download = filename; // prompts download
   downloadLink.textContent = "Download";
   itemDiv.appendChild(document.createElement("br"));
