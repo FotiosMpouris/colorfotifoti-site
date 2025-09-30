@@ -19,7 +19,7 @@ drawings.forEach(filename => {
 
   // Create the image element
   const img = document.createElement("img");
-  img.src = `fotifoti/${filename}`;
+  img.src = `drawings/${filename}`;
   img.alt = filename;
 
   // Add image to the div
@@ -28,7 +28,7 @@ drawings.forEach(filename => {
   // Optional: add a link or button if you want
   // e.g., a "Download" link
   const downloadLink = document.createElement("a");
-  downloadLink.href = `fotifoti/${filename}`;
+  downloadLink.href = `drawings/${filename}`;
   downloadLink.download = filename; // prompts download
   downloadLink.textContent = "Download";
   itemDiv.appendChild(document.createElement("br"));
