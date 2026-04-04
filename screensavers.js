@@ -3,6 +3,7 @@
 // 1. List your colored images (screensavers). 
 // Newest first if you want.
 const screensavers = [
+  "1775319634-colorized.png",
   "1775060467-colorized.png",
   "1774801240-colorized.png",
   "1774542040-colorized.png",
